@@ -10,6 +10,7 @@ import 'package:mind_mate_project/core/theme/app_color.dart';
 import 'package:mind_mate_project/features/auth/presentation/view_models/sign_up_view_model.dart';
 import 'package:mind_mate_project/features/auth/presentation/widgets/auth_elevated_button.dart';
 import 'package:mind_mate_project/features/auth/presentation/widgets/auth_redirect_text.dart';
+import 'package:mind_mate_project/features/auth/presentation/widgets/confirm_pass_widget.dart';
 import 'package:mind_mate_project/features/auth/presentation/widgets/login_section_widget.dart';
 import 'package:mind_mate_project/features/auth/presentation/widgets/or_divider_widget.dart';
 import 'package:provider/provider.dart';
@@ -78,33 +79,7 @@ class SignUpViewBody extends StatelessWidget {
                             password,
                           ),
                           SizedBox(height: ScreenSize.h(context) * 0.02),
-                          TextFormField(
-                            validator:
-                                (confirmPass) =>
-                                    Validator.validateConfirmPassword(
-                                      confirmPassword: confirmPass!,
-                                      password: password.text,
-                                    ),
-
-                            obscureText: provSignUp.isShown ? true : false,
-                            decoration: InputDecoration(
-                              suffixIcon: IconButton(
-                                onPressed: () {
-                                  provSignUp.tooglePasswordVisibilty();
-                                },
-                                icon:
-                                    provSignUp.isShown
-                                        ? Icon(Icons.visibility)
-                                        : Icon(Icons.visibility_off),
-                              ),
-                              labelStyle: TextStyle(color: Colors.black),
-                              filled: true,
-                              fillColor: AppColors.inputFill,
-                              hintText: 'Confirm password',
-                              enabledBorder: appOutLinedBorder(),
-                              focusedBorder: appOutLinedBorder(),
-                            ),
-                          ),
+                               ConfrimPassWidget(password: password) , 
                           SizedBox(height: ScreenSize.h(context) * 0.04),
 
                           AuthElevatedButton(
