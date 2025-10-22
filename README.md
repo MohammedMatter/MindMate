@@ -1,3 +1,5 @@
+> ⚠️ **Note:** This project is currently under development. Features and UI may change.
+
 MindMate – Mental Health Companion
 
 MindMate is a mobile app designed to support mental well-being. It helps users track their moods, access guided exercises, and build healthy daily habits.
