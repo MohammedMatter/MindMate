@@ -1,16 +1,21 @@
-# mind_mate_project
+MindMate – Mental Health Companion
 
-A new Flutter project.
+MindMate is a mobile app designed to support mental well-being. It helps users track their moods, access guided exercises, and build healthy daily habits.
 
-## Getting Started
+Key Features
 
-This project is a starting point for a Flutter application.
+Mood Tracking: Log daily emotions and reflect on patterns.
 
-A few resources to get you started if this is your first Flutter project:
+Guided Exercises: Mindfulness and relaxation practices to reduce stress.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Personalized Insights: Suggestions based on user activity and mood trends.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Secure User Accounts: Authentication and data stored safely using Firebase.
+
+Reminders & Notifications: Helps maintain daily mental health routines.
+
+Tech Stack
+
+Flutter & Dart: Cross-platform mobile development.
+
+Firebase Auth & Firestore: Authentication and cloud data storage.
